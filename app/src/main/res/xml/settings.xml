@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:key="pref_service"
+        android:title="更新"
+        android:summary="每隔1分钟定期更新本地数据库"
+        android:defaultValue="true" />
+    <EditTextPreference
+        android:key="pref_city"
+        android:title="城市"
+        android:summary="选择一个城市"
+        android:defaultValue="BEIJING"/>
+</PreferenceScreen>

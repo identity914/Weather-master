@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/card_padding_vertical"
+    android:paddingLeft="@dimen/card_padding_horizontal"
+    android:paddingRight="@dimen/card_padding_horizontal"
+    android:paddingTop="@dimen/card_padding_vertical">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="@dimen/card_elevation"
+        card_view:cardCornerRadius="@dimen/card_radius"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true"
+        card_view:contentPadding="@dimen/card_padding_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="13">
+
+            <TextView
+                android:id="@+id/day"
+                style="@style/TextviewBigBlack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="DD" />
+
+
+            <TextView
+                android:id="@+id/month"
+                style="@style/TextviewSmallGray"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:lineSpacingMultiplier="1.2"
+                android:text="MMM" />
+
+            <TextView
+                android:id="@+id/week"
+                style="@style/TextviewBigBlack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="WW" />
+
+            <TextView
+                android:id="@+id/hour"
+                style="@style/TextviewSmallGray"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="HH:MM" />
+
+            <TextView
+                android:id="@+id/temperature"
+                style="@style/TextviewBigBlack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:minWidth="60dp"
+                android:text="CC" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    style="@style/ImageviewIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="@string/content_description" />
+
+                <TextView
+                    android:id="@+id/main"
+                    style="@style/TextviewSmallGray"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:text="Clear" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

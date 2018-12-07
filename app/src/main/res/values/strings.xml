@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">天气预报</string>
+    <string name="dd_mmm_yyyy">%1$s - %2$s - %3$s</string>
+    <string name="icon_url">http://openweathermap.org/img/w/%1$s.png</string>
+    <string name="city">Beijing</string>
+    <string name="weather_details">天气内容</string>
+    <string name="openweathermap_url"><![CDATA[http://api.openweathermap.org/data/2.5/forecast/city?id=710791&mode=json&units=metric&appid=217c6b5d9651d1cea2412cf6f84002d7]]></string>
+    <string name="no_internet_no_db">没有网络连接本地数据库为空</string>
+    <string name="no_internet">没有网络连接</string>
+    <string name="refresh">刷新</string>
+    <string name="settings">设置</string>
+    <string name="new_update_available">新的更新提供</string>
+    <string name="updating_db">更新数据库 …</string>
+    <string name="details_divider">内容</string>
+    <string name="settings_title">设置</string>
+    <string name="t_max">最高温度:</string>
+    <string name="t_min">最低温度:</string>
+    <string name="wind_speed">风速 (m/s) :</string>
+    <string name="humidity">湿度 (%):</string>
+    <string name="wind_angle">风角:</string>
+    <string name="content_description">Icon</string>
+    <string name="month_year">%1$s\n%2$s</string>
+    <string name="degree_sym">%1$s%2$s°</string>
+</resources>
